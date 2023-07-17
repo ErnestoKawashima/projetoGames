@@ -1,22 +1,26 @@
 package com.projeto.dslist.dto;
 
+
+import com.projeto.dslist.entities.Game;
+
+
 public class GameMinDTO {
 
-    private long id;
+    private Long id;
     private String title;
     private Integer year;
     private String imgUrl;
     private String shortDescription;
 
-    public GameMinDTO(long id, String title, Integer year, String imgUrl, String shortDescription) {
-        this.id = id;
-        this.title = title;
-        this.year = year;
-        this.imgUrl = imgUrl;
-        this.shortDescription = shortDescription;
+    public GameMinDTO(Game entity) {
+        id = entity.getId();
+        title = entity.getTitle();
+        year = entity.getYear();
+        imgUrl = entity.getImgUrl();
+        shortDescription = entity.getShortDescription();
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

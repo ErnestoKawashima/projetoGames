@@ -1,7 +1,6 @@
-package entitites;
+package com.projeto.dslist.entities;
 
 import jakarta.persistence.*;
-import jdk.jfr.Enabled;
 
 import java.util.Objects;
 
